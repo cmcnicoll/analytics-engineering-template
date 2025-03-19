@@ -1,0 +1,8 @@
+models:
+  - name: metricflow_time_spine
+    description: List of dates for the last 10 years starting from today.
+    columns:
+      - name: date_day
+        data_tests:
+          - not_null
+          - unique

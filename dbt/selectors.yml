@@ -1,0 +1,17 @@
+selectors:
+  - name: dev
+    default: true
+    definition:
+      union:
+        - method: package
+          value: analytics_engineering_template
+        - exclude:
+            - method: fqn
+              value: dbt_project_evaluator_exceptions
+  - name: eval
+    definition:
+      union:
+        - method: package
+          value: dbt_project_evaluator
+        - method: fqn
+          value: dbt_project_evaluator_exceptions

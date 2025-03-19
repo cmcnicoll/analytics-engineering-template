@@ -1,0 +1,13 @@
+analytics_engineering_template:
+  outputs:
+    dev:
+      type: duckdb
+      path: "/workspaces/analytics-engineering-template/duckdb/analytics.duckdb"
+      attach:
+        - type: duckdb
+          path: "/workspaces/analytics-engineering-template/duckdb/raw_data.duckdb"
+          read_only: true
+      schema: analytics
+      threads: 4
+
+  target: dev

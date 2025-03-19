@@ -1,0 +1,23 @@
+{
+  "name": "analytics-engineering-template",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "innoverio.vscode-dbt-power-user",
+        "mechatroner.rainbow-csv",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "nemesv.copy-file-name",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${env:LOCAL_DATA_PATH},target=/workspaces/analytics-engineering-template/data,type=bind"
+  ],
+  "remoteUser": "pn"
+}

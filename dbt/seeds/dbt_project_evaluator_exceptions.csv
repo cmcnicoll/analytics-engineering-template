@@ -1,0 +1,3 @@
+fct_name,column_name,id_to_exclude,comment
+fct_rejoining_of_upstream_concepts,parent_and_child,fct_order_items,Need to add an intermediate model to fix this misalignment.
+fct_sources_without_freshness,resource_name,jaffle_shop%,Jaffle data is static.

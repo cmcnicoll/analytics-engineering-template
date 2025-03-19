@@ -1,0 +1,37 @@
+{
+    "dbt.dbtIntegration": "core",
+    "dbt.sqlFmtAdditionalParams": [
+        "--line-length 88"
+    ],
+
+    "editor.rulers": [88],
+
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "files.associations": {
+        "**/dbt/**/*.sql": "jinja-sql",
+        "**/dbt/target/**": "",
+        "**/dbt_packages/**": ""
+    },
+
+    "[jinja-sql]": {
+        "editor.defaultFormatter": "innoverio.vscode-dbt-power-user",
+        "editor.formatOnSave": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+
+    "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+
+    // for harlequin key bindings
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.sendKeybindingsToShell": true,
+
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "right",
+}
