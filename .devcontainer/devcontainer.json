@@ -17,7 +17,10 @@
     }
   },
   "mounts": [
-    "source=${env:LOCAL_DATA_PATH},target=/workspaces/analytics-engineering-template/data,type=bind"
+    "source=${env:LOCAL_DATA_PATH},target=/workspaces/${localWorkspaceFolderBasename}/data,type=bind"
   ],
+  "remoteEnv": {
+    "REPO_NAME": "${localWorkspaceFolderBasename}"
+  },
   "remoteUser": "pn"
 }

@@ -8,7 +8,7 @@ eval:
 	cd dbt && dbt build --selector eval
 
 init:
-	scripts/modify_language_config.sh
+	bash scripts/modify_language_config.sh
 
 lint:
 	sqlfmt dbt
