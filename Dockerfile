@@ -2,6 +2,7 @@ FROM nikolaik/python-nodejs:python3.12-nodejs23-slim
 
 # Install required dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
+  bash-completion \
   git \
   jq \
   make \

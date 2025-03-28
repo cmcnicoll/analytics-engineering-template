@@ -1,5 +1,7 @@
 {
     "dbt.dbtIntegration": "core",
+    "dbt.fileNameTemplateGenerateModel": "{prefix}_{sourceName}__{tableName}",
+    "dbt.prefixGenerateModel": "stg",
     "dbt.sqlFmtAdditionalParams": [
         "--line-length 88"
     ],

@@ -3,3 +3,5 @@ packages:
     version: 1.0.0
   - package: godatadriven/dbt_date
     version: 0.11.0
+  - package: metaplane/dbt_expectations
+    version: 0.10.8

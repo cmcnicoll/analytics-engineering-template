@@ -1,2 +1,6 @@
 # Set the default behavior to LF for all text files.
 * text=auto eol=lf
+
+# Ensure .sql files are recognized as SQL in GitHub language statistics.
+*.sql linguist-detectable=true
+*.sql linguist-language=sql

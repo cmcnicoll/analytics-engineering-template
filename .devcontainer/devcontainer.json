@@ -7,6 +7,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "bierner.markdown-mermaid",
         "innoverio.vscode-dbt-power-user",
         "mechatroner.rainbow-csv",
         "ms-python.python",

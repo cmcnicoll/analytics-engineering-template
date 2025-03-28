@@ -9,6 +9,7 @@ eval:
 
 init:
 	bash scripts/modify_language_config.sh
+	git config --global pager.branch false
 
 lint:
 	sqlfmt dbt
